@@ -1,0 +1,131 @@
+.detail-container {
+  margin-top: -16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 60px);
+}
+.champion-info {
+  text-wrap: pretty;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.champion-title {
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-shadow: var(--text-shadow);
+}
+.champion-name {
+  font-size: 6em;
+  font-weight: 500;
+  white-space: nowrap;
+  text-shadow: var(--text-shadow);
+  margin: -25px -5px;
+}
+.read-more,
+.ability-name {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.abilities {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  .title {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+}
+.abilities-container {
+  display: flex;
+  gap: 10px;
+}
+.ability {
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  border-radius: 2px;
+}
+.ability.selected {
+  border: 2px solid var(--pure-white-color);
+}
+.damage > span,
+.cooldown > span,
+.ability-description,
+.champion-description {
+  color: var(--light-static-color);
+  background-color: #081f33;
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  padding: 8px;
+}
+.damage,
+.cooldown {
+  color: var(--light-static-color);
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+.ability-description,
+.champion-description {
+  width: 50%;
+}
+.dificulty {
+  .title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .dificulty-level-container {
+    display: flex;
+    gap: 5px;
+    .dificulty-level {
+      border: 2px solid var(--secondary-color);
+      transform: skew(-20deg);
+      width: 20px;
+      height: 20px;
+    }
+    .selected {
+      background-color: var(--secondary-color);
+    }
+  }
+}
+
+.skins-container {
+  text-align: center;
+  .title {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 150px;
+    height: 90%;
+    img {
+      height: 0;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: 0.8;
+      transition: 0.5s ease;
+      border-radius: 15px;
+      box-shadow: var(--box-shadow);
+    }
+    img:hover {
+      cursor: pointer;
+      height: 200px;
+      opacity: 1;
+      filter: contrast(120%);
+    }
+  }
+}
+
+.title,
+.champion-name {
+  color: var(--light-static-color);
+}

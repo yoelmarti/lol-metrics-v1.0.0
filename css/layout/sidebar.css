@@ -1,0 +1,88 @@
+.sidebar {
+  background-color: var(--main-color);
+  /* transition: all 1s ease; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  border-right: 2px solid var(--secondary-color);
+}
+
+.sidebar nav {
+  width: 100%;
+}
+
+.sidebar nav > .logo {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--secondary-color);
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.sidebar nav > .logo > img {
+  filter: var(--tertiary-filtered-color);
+}
+
+.bx {
+  font-size: 1.8rem;
+  text-shadow: var(--text-shadow);
+}
+
+.sidebar > nav > ul {
+  padding-left: 0;
+}
+.sidebar > nav > ul > li {
+  padding: 15px 0 15px 15px;
+  list-style: none;
+  text-shadow: var(--text-shadow);
+}
+
+.sidebar > nav > ul > li:hover {
+  background-color: var(--main-color);
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+a:not(.active) {
+  color: var(--icons-color);
+}
+
+.sidebar > nav > ul > li:has(.active) {
+  border-left: 4px solid var(--secondary-color);
+  padding-left: 11px;
+}
+
+.sidebar > nav > ul > li > .active {
+  color: var(--secondary-color);
+  text-shadow: var(--text-shadow);
+}
+/* Tooltip */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  background-color: var(--main-color);
+  color: var(--pure-white-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  z-index: 1;
+  bottom: 0;
+  left: 180%;
+  white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip-content {
+  display: block;
+}

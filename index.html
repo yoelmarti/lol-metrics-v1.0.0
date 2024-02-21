@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/index.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/league-of-legends-icon-192x192.png"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <aside class="sidebar"></aside>
+    <header class="header"></header>
+    <main class="content" style="padding: 0; overflow-y: hidden">
+      <video autoplay controls start="120">
+        <source
+          src="./assets/videos/Still Here _ Season 2024 Cinematic - League of Legends (ft. Forts, Tiffany Aris, and 2WEI).mp4"
+          type="video/mp4"
+        />
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </main>
+    <div class="min-1080">
+      <p>UNDER CONSTRUCTION:</p>
+      <p>mobile version will be available soon</p>
+      <i class="bx bx-devices bx-tada bx-lg"></i>
+      <p>You can find us on screens</p>
+      <p>with a resolution of 1080px or higher</p>
+    </div>
+  </body>
+</html>
+<script>
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+  const tooltipList = [...tooltipTriggerList].map(
+    (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+  );
+</script>

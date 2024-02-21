@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/components/summoner.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/icons/league-of-legends-icon-192x192.png"
+    />
+
+    <script type="module" src="../js/controller/summoners.js"></script>
+    <title>Summoners</title>
+  </head>
+  <body>
+    <aside class="sidebar"></aside>
+    <header class="header"></header>
+    <main class="content"></main>
+    <div class="min-1080">
+      <p>UNDER CONSTRUCTION:</p>
+      <p>mobile version will be available soon</p>
+      <i class="bx bx-devices bx-tada bx-lg"></i>
+      <p>You can find us on screens</p>
+      <p>with a resolution of 1080px or higher</p>
+    </div>
+  </body>
+</html>
+
+<template id="summoner">
+  <section class="cover">
+    <div>
+      <img class="profile-icon" src="" alt="" />
+      <p class="name"><!--summoner-name--></p>
+      <span class="tag-name glass-bg"></span>
+    </div>
+  </section>
+  <section class="main-info">
+    <div class="league-info">
+      <img class="tier" src="" alt="" />
+      <div class="lp-box">
+        <p class="title"></p>
+        <p class="league-points"></p>
+      </div>
+      <div class="win-rate-box">
+        <p class="title">WIN RATE</p>
+        <p class="win-rate"></p>
+        <p class="wins-losses"></p>
+      </div>
+      <div class="kda-chart">
+        <table class="charts-css area">
+          <thead>
+            KDA Last 15 matches
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="kda-stats">
+      <div class="kda">
+        <p class="title">KDA</p>
+        <p class="absolute-kda-value"></p>
+      </div>
+      <div class="avg-kda">
+        <p class="title">Avg K/D/A</p>
+        <p class="avg-k-d-a-value"></p>
+      </div>
+    </div>
+    <section class="top-champions">
+      <header>
+        <i class="bx bx-calendar-star"></i>
+        <div>
+          <h2>Top Champions</h2>
+        </div>
+      </header>
+    </section>
+    <section class="matches">
+      <header>
+        <i class="bx bx-objects-horizontal-left"></i>
+        <div>
+          <h2></h2>
+        </div>
+      </header>
+    </section>
+  </section>
+</template>
+
+<template id="top-champion">
+  <div class="champion">
+    <img class="avatar" src="" alt="" />
+    <p class="name"></p>
+    <p class="level"></p>
+    <p class="points"></p>
+    <p class="last-day-played"></p>
+  </div>
+</template>
+
+<template id="match-info">
+  <div class="match">
+    <div>
+      <p class="days-ago"></p>
+      <span class="match-duration"></span>
+      <p class="result"></p>
+    </div>
+
+    <figure>
+      <img class="champion-small-image" src="" alt="" />
+      <figcaption class="level"></figcaption>
+    </figure>
+
+    <div class="items">
+      <p></p>
+    </div>
+    <div>
+      <p class="position"></p>
+    </div>
+    <div>
+      <p class="kda"></p>
+    </div>
+  </div>
+</template>

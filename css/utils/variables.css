@@ -1,0 +1,30 @@
+:root {
+  /* Colors Pallette */
+  --main-color: #081f33;
+  --primary-color: #0a2740;
+  --secondary-color: #44f814;
+  --tertiary-color: rgba(24, 130, 143, 0.85);
+  --pure-white-color: #f9f9f9;
+  --defeat-color: #d00000;
+  --victory-color: #70e000;
+  --grey-color: #a3a3a3;
+  --icons-color: #f9f9f9;
+  --light-static-color: #f9f9f9;
+  /* Shadows */
+  --box-shadow: 0 0.1em 0.4em rgb(0 0 0 / 50%);
+  --text-shadow: 0 -0.1em 0.1em rgb(0 0 0 / 50%);
+
+  /* Filter for svg */
+  --tertiary-filtered-color: invert(73%) sepia(73%) saturate(482%)
+    hue-rotate(70deg) brightness(99%) contrast(104%);
+}
+
+body.light-theme {
+  --main-color: #f8f9fa;
+  --primary-color: #ced4da;
+  --secondary-color: #44f814;
+  --tertiary-color: #adb5bd;
+  --pure-white-color: #081f33;
+  --grey-color: #a3a3a3;
+  --icons-color: #081f33;
+}

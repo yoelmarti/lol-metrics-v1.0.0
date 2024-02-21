@@ -1,0 +1,51 @@
+@import "./champion-filter.css";
+.champions-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: auto;
+}
+.champion-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 460px;
+  padding: 16px 16px 24px;
+  border-radius: 32px;
+  border: 2px solid var(--secondary-color);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.2px);
+  -webkit-backdrop-filter: blur(1.2px);
+}
+.image {
+  border-radius: 28px;
+  width: 100%;
+}
+.info-container {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.text-container .title {
+  color: var(--pure-white-color);
+}
+.role-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-right: 10px;
+}
+.role-container > img {
+  width: 45px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: #081f33;
+}

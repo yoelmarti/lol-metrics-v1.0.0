@@ -1,0 +1,201 @@
+.content {
+  /* color: var(--pure-white-color); */
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.bx-search-alt {
+  cursor: pointer;
+  color: var(--pure-white-color);
+  font-size: 1.5em;
+}
+.bx-search-alt:hover {
+  color: var(--secondary-color);
+}
+
+input {
+  font-size: 1.1em;
+  border: none;
+  border-bottom: 3px solid var(--secondary-color);
+  width: 250px;
+  background: var(--main-color);
+  text-align: center;
+  color: var(--pure-white-color);
+}
+::placeholder {
+  color: var(--pure-white-color);
+}
+select {
+  font-size: 1.1em;
+  border: none;
+  width: 250px;
+  padding: 0 30px;
+  border-bottom: 3px solid var(--secondary-color);
+  background: var(--main-color);
+  color: var(--pure-white-color);
+}
+.search-summoner {
+  display: flex;
+  align-items: center;
+}
+.cover {
+  margin-top: -16px;
+  min-height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25% 10%;
+  display: flex;
+  align-items: self-end;
+  border-bottom: 2px solid var(--secondary-color);
+  div {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    color: var(--pure-white-color);
+    .profile-icon {
+      vertical-align: middle;
+      width: 135px;
+      height: 135px;
+      border-radius: 50%;
+      border: 3px solid var(--secondary-color);
+      margin-bottom: -75px;
+      margin-right: 25px;
+    }
+    .name {
+      font-size: 2em;
+      font-weight: 500;
+    }
+    .tag-name {
+      padding: 3px 9px;
+      margin-left: 5px;
+      font-size: 1.5em;
+      font-style: italic;
+    }
+    .name,
+    .tag-name {
+      color: var(--light-static-color);
+    }
+  }
+}
+
+.main-info {
+  color: var(--pure-white-color);
+  padding: 100px 50px 0 50px;
+  width: 100%;
+  .league-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--tertiary-color);
+    box-shadow: var(--box-shadow);
+    padding: 20px 30px 50px 30px;
+    .tier {
+      width: 150px;
+      filter: drop-shadow(0 0 0.4rem var(--pure-white-color));
+    }
+    .kda-chart {
+      width: 100%;
+      max-width: 800px;
+      margin: 0;
+      .area {
+        --aspect-ratio: 100 / 15;
+      }
+    }
+  }
+  .kda-stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -30px;
+    .kda {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 80px;
+      background-color: var(--primary-color);
+      box-shadow: var(--box-shadow);
+    }
+    .avg-kda {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 80px;
+      background-color: var(--primary-color);
+      box-shadow: var(--box-shadow);
+    }
+  }
+}
+.top-champions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px 0;
+  padding: 30px;
+  background-color: var(--tertiary-color);
+  header {
+    display: flex;
+  }
+  .champion {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 15px;
+    font-size: 1.5em;
+  }
+}
+.matches {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--tertiary-color);
+  .victory {
+    border-left: 5px solid var(--victory-color);
+  }
+  .defeat {
+    border-left: 5px solid var(--defeat-color);
+  }
+  header {
+    display: flex;
+    padding-left: 25px;
+  }
+  .match {
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    padding-left: 25px;
+    padding-top: 5px;
+    border-bottom: 2px solid var(--main-color);
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    figure {
+      position: relative;
+      display: inline-block;
+      .champion-small-image {
+        width: 90px;
+      }
+      .level {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        border-top-left-radius: 8px;
+        color: var(--light-static-color);
+      }
+    }
+    .items img {
+      margin-right: 5px;
+      width: 40px;
+    }
+  }
+}

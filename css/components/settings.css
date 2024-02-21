@@ -1,0 +1,59 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  background-color: var(--tertiary-color);
+  width: 60%;
+  padding: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  margin-top: 25px;
+}
+div.form-check {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+}
+input[type="checkbox"] {
+  color: var(--main-color);
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+input[type="checkbox"]:focus {
+  border-color: none;
+  box-shadow: none;
+}
+input[type="checkbox"]:checked {
+  background-color: #081f33;
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+
+select.form-select:hover,
+select.form-select:focus {
+  box-shadow: var(--box-shadow);
+  border-color: var(--main-color);
+}
+
+button[type="submit"] {
+  align-items: center;
+  width: 30%;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border-color: var(--main-color);
+  box-shadow: var(--box-shadow);
+}
+
+button[type="submit"]:hover {
+  align-items: center;
+  background-color: var(--main-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}

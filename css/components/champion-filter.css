@@ -1,0 +1,20 @@
+#role-filter {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-button {
+  font-size: 1em;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  color: var(--pure-white-color);
+  padding: 10px;
+}
+
+.menu-button.selected {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,103 @@
+@import "utils/variables.css";
+@import "layout/sidebar.css";
+
+/* @import "./components/champion-details.css"; */
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary-color);
+}
+body {
+  display: grid;
+  grid-template-columns: 60px 3fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+  height: 100vh;
+  margin: 0;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.header {
+  grid-area: header;
+  background-color: var(--main-color);
+  color: white;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding-top: 16px;
+}
+.champion-detail-container {
+  width: 100%;
+  color: var(--pure-white-color);
+}
+
+.neonText:hover {
+  color: var(--secondary-color);
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px var(--secondary-color), 0 0 82px var(--secondary-color),
+    0 0 92px var(--secondary-color), 0 0 102px var(--secondary-color),
+    0 0 151px var(--secondary-color);
+}
+
+.glass-bg {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+}
+.content {
+  overflow-y: scroll;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto asegura que el video se ajuste para cubrir completamente su contenedor manteniendo su relación de aspecto */
+}
+
+.min-1080 {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  .content {
+    display: none;
+  }
+  .min-1080 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    p {
+      font-size: 2em;
+      margin: 0;
+    }
+    p,
+    i {
+      color: var(--pure-white-color);
+    }
+  }
+}
